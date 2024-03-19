@@ -1,14 +1,14 @@
 pipeline {
   environment {
     imagename = "muralimeruga/c0882902-node-assignment3"
-    registryCredential = 'docker_registry_key_1'
+    registryCredential = 'dummy'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/SardarMurali/C0882902_CLASSASSIGNMENT_3-MAINN.git', branch: 'master'])
+        git([url: 'https://github.com/SardarMurali/C0882902_CLASSASSIGNMENT_3-MAINN.git', branch: 'master', credentialisId: 'dummy'])
  
       }
     }
