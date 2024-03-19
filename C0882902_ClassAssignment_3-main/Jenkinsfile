@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/SardarMurali/C0882902_CLASSASSIGNMENT_3-MAINN/tree/3cb7daae95017a461f920c66f763f73bf5463d93/C0882902_ClassAssignment_3-main', branch: 'master'])
+        git([url: 'https://github.com/SardarMurali/C0882902_CLASSASSIGNMENT_3-MAINN.git', branch: 'master'])
  
       }
     }
