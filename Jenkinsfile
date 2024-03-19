@@ -1,7 +1,7 @@
 pipeline {
   environment {
     imagename = "muralimeruga/c0882902-node-assignment3"
-    registryCredential = 'dummy'
+    registryCredential = 'docker_registry_key'
     dockerImage = ''
   }
   agent any
